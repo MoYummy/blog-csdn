@@ -2,11 +2,12 @@ sudo: required
 services:
 - docker
 branches:
-  only:
-  - master
+  except:
+    - gh-pages
 git:
   submodules: false
 before_install:
+- git config --global user.email "mo_yummy@sina.cn"
 - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
 - git submodule update --init --recursive
 - git submodule foreach git pull origin master
@@ -18,9 +19,9 @@ before_install:
 - cd $TRAVIS_BUILD_DIR/src; bundle install
 script:
 - cd $TRAVIS_BUILD_DIR; ./update_config.sh src/_config.yml
-- cd $TRAVIS_BUILD_DIR/src; bundle exec jekyll build
+- cd $TRAVIS_BUILD_DIR/src; bundle exec jekyll build -d $TRAVIS_BUILD_DIR/deploy
 after_success:
-- cd $TRAVIS_BUILD_DIR; ./deploy.sh $(pwd)/docs
+- cd $TRAVIS_BUILD_DIR; ./deploy.sh deploy
 env:
   global:
     secure: nparUO/z/lkmLW2YLJFTE6f3zseFORdFlAp0HvkaRwloWkGx3uQLh5izgjIjzGHo4Bnck0eB3Sl93/Ytkd7yTaks+cHCLvwS3F55Pv2XmgCliHdUc1gxTCgOyQezrM31hCmisToHmM4y5LJyboLAcF/JrDhSFGVRB0nts4fRLQYYIMQZP21jN/nx2HbF5rdfW7YyAGJ7aJKqdcvUkByrGXU3jn1XzZt+HM2+vLgdq3Z3uMbtcG7AeC+EfDq9oNlblc/f9yHBo7Y8d2QRhScClPrtf7AUxd0VbXMKxTV70WsdieFJdC/fTV42nQCE0JnmApYckHOIjoJiG6vXK9yUaZjX+XCks7EkQFtQ/Az+UiARMc1hDCfCtMoY/LiZxDO4wEZVZmE8NqbstpFvWOs1zcqflHoNbYVeAKTHlFHvsLRlsBk6awn9OIzo1qhhclog2rXL2uaEvIl5iRWbOKcs5NfNRo7CBpJLUQXH+gGVIVa8fcElmejM8SspZLLqenKqbiJVfpP0KqjXOG7IWiOoo2MeyeoO8+8l0VGmm6mUoetFUxy9ZMuh7neZUb88dnguRzk6ZTtWEyek2A51tJs5XwKIQfZhzIbFBYTswOiK1ufVkEgzXGlNqT/66FHGR+KhX6/EjkFuGmkbNyHg2wnawQ+LazuRZfYbjFobyH9VU94=

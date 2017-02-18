@@ -2,20 +2,14 @@
 
 deploy_dir=$1
 set -o errexit -o nounset
-if [ "$TRAVIS_BRANCH" != "master" ]
+if [ "$TRAVIS_BRANCH" != "deploy" ]
 then
   echo "No deploy on $TRAVIS_BRANCH"
   exit 0
 fi
-echo "Deploying"
 
-cd ${deploy_dir}
-git init
-git config user.email "mo_yummy@sina.cn"
-git remote add upstream "https://$GH_TOKEN@github.com/MoYummy/blog-csdn.git"
-git fetch upstream
-git reset upstream/gh-pages
-touch .
-git add -A .
-git commit -m "deploy"
-git push -q upstream HEAD:gh-pages
+echo "Deploying"
+git add -f ${deploy_dir} && \
+git commit -am "Deploy on gh-pages" && \
+git subtree split --prefix ${deploy_dir} -b gh-pages && \
+git push --force "https://$GH_TOKEN@github.com/MoYummy/blog-csdn.git" gh-pages:gh-pages
