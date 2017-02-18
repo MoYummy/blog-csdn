@@ -2,7 +2,7 @@
 
 deploy_dir=$1
 set -o errexit -o nounset
-if [ "$TRAVIS_BRANCH" != "master" ]
+if [ "$TRAVIS_BRANCH" != "deploy" ]
 then
   echo "No deploy on $TRAVIS_BRANCH"
   exit 0

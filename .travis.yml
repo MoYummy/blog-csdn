@@ -2,8 +2,8 @@ sudo: required
 services:
 - docker
 branches:
-  only:
-  - master
+  except:
+    - gh-pages
 git:
   submodules: false
 before_install:
