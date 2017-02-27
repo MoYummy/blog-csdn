@@ -1,6 +1,6 @@
 [submodule "theme"]
 	path = theme
-	url = https://github.com/MoYummy/jekyll-theme-csdn.git
+	url = https://github.com/iMoYummy/jekyll-theme-csdn.git
 [submodule "post"]
 	path = post
 	url = https://github.com/MoYummy/blog-post.git
