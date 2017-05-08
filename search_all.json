@@ -1,0 +1,617 @@
+[
+
+  {
+    "title"    : "Thoughts about working style",
+    "category" : "",
+    "tags"     : "stuff, thoughts",
+    "url"      : "/blog-csdn/2017/03/24/Thoughts-about-working-style/",
+    "date"     : "2017-03-24 15:48:00 +0800",
+    "content"  : "短期目标与长期目标以Best Practice的方式做一个User Story，假设需要10个mhr。以Work Around的方式先做一个prototype、或者为了某个可demo的目标，假设需要3个mhr。但是，从这样一个短期的实现，到最终的完成，并没有足够的重用性，也就是，之后还需要10个mhr。如果把重用性考虑进去，那么短期的目标需要8个mhr，之后继续做需要3个mhr。可能真实情况下，单就一个User Story，两者差的不多，从长期看，孰优孰劣，一目了然，好比O(log(n))和O(n)      index    mhr    mhr    mhr    mhr    mhr    mhr    mhr    mhr    mhr    mhr    mhr    mhr    mhr        1    Best Practice        2    Work Around    Rest        3    Demo    Rest  "
+  }
+,
+
+  {
+    "title"    : "Kramdown example preview",
+    "category" : "",
+    "tags"     : "kramdown, markdown",
+    "url"      : "/blog-csdn/2017/02/18/Kramdown-example-preview/",
+    "date"     : "2017-02-18 19:41:00 +0800",
+    "content"  : "This `is not a code` span!First level headerSecond level headerOther first level headerThis is a normalparagraph.And A HeaderAnd a paragraph  This is a blockquote.And A HeaderheaderparaFirst level headerThird level headerSecond level headerHelloHelloHello  This is a blockquote.    on multiple linesthat may be lazy.  This is the second paragraph.  This is a paragraph.      A nested blockquote.    Headers work      lists too    and all other block-level elements  A code block:  ruby -e &#39;puts :works&#39;    This is a paragraph insidea blockquote.      This is a nested paragraphthat continues hereand hereand here  Here comes some codeThis text belongs to the same code block.Here comes some codeThis one is separate.Here comes some code.def what?  42enddef what?  42end  kram  down  now  kram  down  now  This is the first line. Since the first non-space characters appears incolumn 3, all other indented lines have to be indented 2 spaces.However, one could be lazy and not indent a line but this is notrecommended.  This is the another item of the list. It uses a different number   of spaces for indentation which is okay but should generally be avoided.  The list item marker is indented 3 spaces which is allowed but shouldalso be avoided and starts the third list item. Note that the lazyline in the second list item may make you believe that this is asub-list which it isn’t! So avoid being lazy!  This is the first list item bla blabla blabla blabla blabla blablablabla blabla blabla blabla blabla blabla blabla blabla blabla blablablabla blabla blabla bla  This is the another item of the list. bla blabla blabla blabla blablablabla blabla blabla blabla blabla blabla blabla blabla blabla blabla  list 1 item 1  list 1 item 2 (indent 1 space)  list 1 item 3 (indent 2 spaces)  list 1 item 4  (indent 3 spaces)    * lazy text belonging to above item 4  list 1 item 1  list 1 item 2 (indent 1 space)  list 1 item 3 (indent 2 spaces)  list 1 item 4  (indent 3 spaces)    5. lazy text belonging to above item 4  list 1 item 1          nested list item 1      nested list item 2        list 1 item 2          nested list item 1        list 1 item 1          nested list item 1      nested list item 2        list 1 item 2          nested list item 1            text for this list itemfurther text (indent 3 spaces)        text for this list itemfurther text (indent 4 spaces)    Using a tab to indent this line, the tab only counts as three spacesand therefore the overall indentation is four spaces.  The tab after the marker counts here as three spaces. Since theindentation of the marker is three spaces and the marker itselftakes two characters, the overall indentation needed for thefollowing lines is eight spaces or two tabs.      kram    down  now  Not wrapped in a paragraph      Wrapped in a paragraph due to the following blank line.        Also wrapped in a paragraph due to thefollowing blank line and the EOB marker.        First list item        Second list item        Last list item        First item    A second paragraph          nested list              blockquote            Second item        This is a list item.    The second para of the list item.  A code block following the list item.  List one  List two  This is just text.          this is a sub list item                  this is a sub sub list item                      This is just text,  spanning two lines          this is a nested list item.      1984. It was great- others say that, too!      This item has the class “cls”.Here continues the above paragraph.        This is a normal list item.    kramdown  A Markdown-superset converter  Maruku  Another Markdown-superset converter  definition term 1  definition term 2  This is the first line. Since the first non-space characters appears incolumn 3, all other lines have to be indented 2 spaces (or lazy syntax maybe used after an indented line). This tells kramdown that the linesbelong to the definition.  This is the another definition for the same term. It uses adifferent number of spaces for indentation which is okay butshould generally be avoided.  The definition marker is indented 3 spaces which is allowed butshould also be avoided.  definition term  This definition will just be text because it would normally be aparagraph and the there is no preceding blank line.          although the definition contains other block-level elements            This definition will be a paragraph since it is preceded by ablank line.    Term with id=”term”  Definition with class “cls”  First term  Second term  Definition            First cell      Second cell      Third cell              First      Second      Third                  First      Second             Fourth      |—-+—-|+—-|—-+|———||-| :—–: |  |-|—+—+—|  :-: |:——| —:|| :-: :- -: -:-: | :-|====+====|+====|====+|=========||=            Default aligned      Left aligned      Center aligned      Right aligned                  First body part      Second cell      Third cell      fourth cell              Second line      foo      strong      baz              Third line      quux      baz      bar                  Second body                                   2 line                                       Footer row                                       Default aligned      Left aligned      Center aligned      Right aligned                  First body part      Second cell      Third cell      fourth cell              Second line      foo      strong      baz              Third line      quux      baz      bar                  Second body                                   2 line                                       Footer row                           The following is a math block:But next comes a paragraph with an inline math statement:$$ 5 + 5 $$This is a para.Something in here.Other para.This is a para.Something in here.Other para.This is some text in the `layer1` div.This is some text in the `layers` div.This is a para outside the HTML block.  This is the first part of a para,which is continued here.This works without problems because it is parsed asspan-level elements  The end tag is not found becausethis line is parsed as a paragraph&amp;lt;/div&amp;gt;    This is a para.      Another para.&amp;lt;/p&amp;gt;        This is a para.      Another para.        This is a para. First part of para,continues here.        Information can be found on the http://example.com homepage.You can also mail me: me.example@example.com        This is a link to a page.A link can also have a title.And spaces!        This is a link        This is a reference style link to a page. And this is also a link. As is [this][] and [THIS].            The next paragraph contains a link and some text.    Room 100: There you should find everything you need!            Here comes a ! And here. Or ![here].With empty alt text         Here is an inline .    And here is a referenced         some textsome textsome textsome text        This is unbelieveable! This d_oe_s not work!        This is a text with light and strong emphasis.This is emphasized as well.This does _not_ work.This does __not__ work either.        This is a * literal asterisk.These are ** two literal asterisk.As *are* these!        Use &amp;lt;html&amp;gt; tags for this.        Here is a literal ` backtick.And here is  `some`  text (note the two spaces so that one is leftin the output!).        This is a ` literal backtick.As `are` these!        This is a Ruby code fragment x = Class.new        This is .    This is automatically closed.        Link: text        Link: text        This is some text.1. Other text.2.            This is some text not written in HTML but in another language!                      list item one                    list item two                        list one              list two                    A simple paragraph with an ID attribute.          A blockquote with a title        Some code here            This is some code.A link and some tools.        This is italicmarked text            Do you see ?                  Some crazy footnote definition.&amp;nbsp;&amp;#8617;                      Blockquotes can be in a footnote.            as well as code blocks            or, naturally, simple paragraphs.&amp;nbsp;&amp;#8617;      "
+  }
+,
+
+  {
+    "title"    : "Birth of jekyll-theme-csdn",
+    "category" : "",
+    "tags"     : "jekyll",
+    "url"      : "/blog-csdn/2017/02/15/Birth-of-jekyll-theme-csdn/",
+    "date"     : "2017-02-15 12:00:00 +0800",
+    "content"  : "Hope this can help some green guys in future :)Here are the reference links  bootstrap(cn) / bootstrap(en)  bootstrap-hover-dropdown  deploy via travis  choose blog license  kramdown syntax  simple jekyll search  reference repo  reference repo  reference repo"
+  }
+,
+
+  {
+    "title"    : "Setup docker on Centos",
+    "category" : "",
+    "tags"     : "docker, centos",
+    "url"      : "/blog-csdn/2017/02/04/Setup-docker-on-Centos/",
+    "date"     : "2017-02-04 16:30:00 +0800",
+    "content"  : "sudo yum install -y yum-utilssudo yum-config-manager --add-repo https://docs.docker.com/engine/installation/linux/repo_files/centos/docker.reposudo yum makecache fastsudo yum -y install docker-enginesudo service docker startsudo chkconfig docker oncut -d: -f1 /etc/group|grep dockersudo usermod -a -G docker [user]sudo reboot -fThen try pulling an image likedocker pull jenkins"
+  }
+,
+
+  {
+    "title"    : "Two ways to install Xcode command tool",
+    "category" : "",
+    "tags"     : "macos, xcode",
+    "url"      : "/blog-csdn/2017/01/10/Two-ways-to-install-Xcode-command-tool/",
+    "date"     : "2017-01-10 21:07:00 +0800",
+    "content"  : "  Run xcode-select --install in Terminal or iTerm2, then click Install  Download dmg from official site, then double-click to open and install"
+  }
+,
+
+  {
+    "title"    : "Sublime setting",
+    "category" : "",
+    "tags"     : "sublime",
+    "url"      : "/blog-csdn/2017/01/10/My-sublime-setting/",
+    "date"     : "2017-01-10 13:32:00 +0800",
+    "content"  : "Here is my sublime setting{    &quot;ignored_packages&quot;:    [        &quot;Vintage&quot;    ],    &quot;translate_tabs_to_spaces&quot;: true,    &quot;draw_white_space&quot;: &quot;all&quot;,    &quot;indent_to_bracket&quot;: true,    &quot;word_wrap&quot;: true,    &quot;highlight_modified_tabs&quot;: true,    &quot;highlight_line&quot;: true,    &quot;open_files_in_new_window&quot;: false}"
+  }
+,
+
+  {
+    "title"    : "Install vim Typescript plugin",
+    "category" : "",
+    "tags"     : "vim, typescript",
+    "url"      : "/blog-csdn/2016/12/28/Install-vim-Typescript-plugin/",
+    "date"     : "2016-12-28 01:29:00 +0800",
+    "content"  : "  Download vim-plugcurl -fLo ~/.vim/autoload/plug.vim --create-dirs \    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim  Download typescript-vim plugingit clone https://github.com/leafgarland/typescript-vim.git ~/.vim/bundle/typescript-vim  Add config of typescript-vim in ~/.vimrccall plug#begin(&#39;~/.vim/plugged&#39;)Plug &#39;leafgarland/typescript-vim&#39;call plug#end()  Open vim and enter :PlugInstall"
+  }
+,
+
+  {
+    "title"    : "Setup git on Centos",
+    "category" : "",
+    "tags"     : "centos, git",
+    "url"      : "/blog-csdn/2016/11/29/Setup-git-on-Centos/",
+    "date"     : "2016-11-29 14:00:00 +0800",
+    "content"  : "Install gitsudo -iyum install gitCreate ssh keycd ~mkdir .sshchmod 700 .sshcd .sshssh-keygen # enter, enter, entermv id_rsa moyummygitmv id_rsa.pub moyummygit.pubcat moyummygit.pub # &quot;ssh-rsa [blahblahblah]== [blahblah]&quot;Create or edit ~/.ssh/configHost github.com    PreferredAuthentications publickey    IdentityFile ~/.ssh/moyummygitAdd ssh key to your github account through https://github.com/settings/keysTry cloning a git through protocolgit clone git@github.com:MoYummy/Ruby.gitTry ssh -vT git@github.com for trouble shooting"
+  }
+,
+
+  {
+    "title"    : "Setup Ruby on Centos",
+    "category" : "",
+    "tags"     : "ruby, centos",
+    "url"      : "/blog-csdn/2016/11/29/Setup-Ruby-on-Centos/",
+    "date"     : "2016-11-29 13:37:00 +0800",
+    "content"  : "Install RVMsudo -iyum groupinstall -y development # or yum groupinstall -y &#39;development tools&#39;gpg2 --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3curl -L get.rvm.io | bash -s stableusermod -aG rvm administrator # usermod -aG rvm [user]Install Rubyrvm install 2.3.1 # rvm install [version]rvm use 2.3.1Check byid # uid=502(administrator) gid=502(administrator) groups=502(administrator),5669(rvm)ruby -v # ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-linux]irb # 2.3.1 :001 &amp;gt; (id number may be different depending on machine)"
+  }
+,
+
+  {
+    "title"    : "Git reset",
+    "category" : "",
+    "tags"     : "git, github",
+    "url"      : "/blog-csdn/2016/11/23/Git-reset/",
+    "date"     : "2016-11-23 14:02:00 +0800",
+    "content"  : "git reset [commit] # reset local to that commitgit stash # save changesgit push -f # force push to remotegit stash pop # load changesgit status # commit list has change to that commit with changes after it"
+  }
+,
+
+  {
+    "title"    : "Sublime plugin list",
+    "category" : "",
+    "tags"     : "sublime",
+    "url"      : "/blog-csdn/2016/06/08/Sublime-plugin-list/",
+    "date"     : "2016-06-08 15:18:00 +0800",
+    "content"  : "Here is the list of my sublime pluginAlignmentBracket HighlighterEditorConfigEmmetFileDiffsBaseEncoderBrowserRefresh # or LiveReloadMarkdownPreview ModificNodejsPrettyJSONSublimeLinterTypescript"
+  }
+,
+
+  {
+    "title"    : "Change yum mirror on Centos",
+    "category" : "",
+    "tags"     : "centos",
+    "url"      : "/blog-csdn/2016/01/26/Change-yum-mirror-on-Centos/",
+    "date"     : "2016-01-26 10:47:00 +0800",
+    "content"  : "Pick a mirror on http://mirror-status.centos.org/ (e.g. mirror.vastspace.net)Backupls /etc/yum.repos.d/ # CentOS-Base.repo  CentOS-Debuginfo.repo  CentOS-fasttrack.repo  CentOS-Media.repo  CentOS-Vault.reposudo cp /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.baksudo vi /etc/yum.repos.d/CentOS-Base.repoUpdate via vim commands:%s/^#base/base/g:%s/^mirror/#mirror/g:%s/mirror.centos.org/mirror.vastspace.net/g:wq"
+  }
+,
+
+  {
+    "title"    : "Setup git on windows",
+    "category" : "",
+    "tags"     : "git, github",
+    "url"      : "/blog-csdn/2015/12/09/Setup-git-on-windows/",
+    "date"     : "2015-12-09 11:08:00 +0800",
+    "content"  : "Download and install http://www.git-scm.com/download/winAdd to PathC:\Program Files\Git\cmd;C:\Program Files\Git\bin;Configure globalgit config --global user.name &quot;Mo Yummy&quot;git config --global user.email &quot;mo.yummy@example.com&quot;git config --global push.default simpleConfigre ssh key C:\Users\moyummy\.ssh\configHost github.com    HostName github.com    User Mo-Yummy    PreferredAuthentications publickey    IdentityFile ~/.ssh/moyummyHost git.enterprise.com    HostName git.enterprise.com    User Mo-Yummy-Enterprise    PreferredAuthentications publickey    IdentityFile ~/.ssh/moyummyenterpriseDownload and install http://winmerge.org/downloads/Create script C:\Program Files\Git\cmd\winmerge.sh#!/bin/shecho Launching WinMergeU.exe: $1 $2&quot;C:\Program Files (x86)\WinMerge\WinMergeU.exe&quot; -e -ub -dl &quot;Base&quot; -dr &quot;Mine&quot; &quot;$1&quot; &quot;$2&quot;Configure diff toolgit config --replace --global diff.tool winmergegit config --replace --global difftool.winmerge.cmd &quot;winmerge.sh \&quot;$LOCAL\&quot; \&quot;$REMOTE\&quot;&quot;git config --replace --global difftool.prompt falseTry cloning a gitcd C:\githubgit clone https://github.com/MoYummy/blog-postgit checkout masterEdit something and try diffgit difftool"
+  }
+,
+
+  {
+    "title"    : "Github merge",
+    "category" : "",
+    "tags"     : "vim",
+    "url"      : "/blog-csdn/2015/11/24/Github-merge/",
+    "date"     : "2015-11-24 16:29:00 +0800",
+    "content"  : "Merge from master to mybranchgit checkout mastergit pullgit checkout mybranchgit merge mastergit status"
+  }
+,
+
+  {
+    "title"    : ".vimrc",
+    "category" : "",
+    "tags"     : "vim",
+    "url"      : "/blog-csdn/2015/11/24/My-.vimrc/",
+    "date"     : "2015-11-24 15:48:00 +0800",
+    "content"  : "Here is my .vimrcset numberset rulerset laststatus=2set enc=utf-8set history=1000syntax onfiletype onset autoindentset smartindentset cindentset tabstop=4set shiftwidth=4set softtabstop=4set expandtabset smarttabset showmatchset nohlsset hlsearchset incsearchau FileType ruby setl shiftwidth=2 softtabstop=2 etau FileType python setl shiftwidth=2 softtabstop=2 et"
+  }
+
+
+  ,
+
+  {
+
+   }
+,
+
+  {
+
+    "title"    : "About me",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/about/",
+    "date"     : "",
+    "content"  : "  About me      Mo Yummy    MoYummy&#39;s Blog  "
+
+   }
+,
+
+  {
+
+    "title"    : "Archive",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/archive/",
+    "date"     : "",
+    "content"  : "                  Thoughts about working style              24 Mar 2017       View (100)       Comment (100)                        Kramdown example preview              18 Feb 2017       View (100)       Comment (100)                        Birth of jekyll-theme-csdn              15 Feb 2017       View (100)       Comment (100)                        Setup docker on Centos              04 Feb 2017       View (100)       Comment (100)                        Two ways to install Xcode command tool              10 Jan 2017       View (100)       Comment (100)                        Sublime setting              10 Jan 2017       View (100)       Comment (100)                        Install vim Typescript plugin              28 Dec 2016       View (100)       Comment (100)                        Setup git on Centos              29 Nov 2016       View (100)       Comment (100)                        Setup Ruby on Centos              29 Nov 2016       View (100)       Comment (100)                        Git reset              23 Nov 2016       View (100)       Comment (100)                        Sublime plugin list              08 Jun 2016       View (100)       Comment (100)                        Change yum mirror on Centos              26 Jan 2016       View (100)       Comment (100)                        Setup git on windows              09 Dec 2015       View (100)       Comment (100)                        Github merge              24 Nov 2015       View (100)       Comment (100)                        .vimrc              24 Nov 2015       View (100)       Comment (100)      "
+
+   }
+,
+
+  {
+
+    "title"    : "Category",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/category/",
+    "date"     : "",
+    "content"  : "      stuff        git        sublime        ruby        docker        jekyll        thoughts  "
+
+   }
+,
+
+  {
+
+    "title"    : "Excerpt",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/excerpt/",
+    "date"     : "",
+    "content"  : "                  Thoughts about working style        短期目标与长期目标          24 Mar 2017       View (100)       Comment (100)                        Kramdown example preview                  18 Feb 2017       View (100)       Comment (100)                        Birth of jekyll-theme-csdn        Hope this can help some green guys in future :)          15 Feb 2017       View (100)       Comment (100)                        Setup docker on Centos        sudo yum install -y yum-utilssudo yum-config-manager --add-repo https://docs.docker.com/engine/installation/linux/repo_files/centos/docker.reposudo yum makecache fastsudo yum -y install docker-enginesudo service docker startsudo chkconfig docker oncut -d: -f1 /etc/group|grep dockersudo usermod -a -G docker [user]sudo reboot -f          04 Feb 2017       View (100)       Comment (100)                        Two ways to install Xcode command tool          Run xcode-select --install in Terminal or iTerm2, then click Install  Download dmg from official site, then double-click to open and install          10 Jan 2017       View (100)       Comment (100)                        Sublime setting        Here is my sublime setting          10 Jan 2017       View (100)       Comment (100)                        Install vim Typescript plugin          Download vim-plug          28 Dec 2016       View (100)       Comment (100)                        Setup git on Centos        Install gitsudo -iyum install git          29 Nov 2016       View (100)       Comment (100)                        Setup Ruby on Centos        Install RVMsudo -iyum groupinstall -y development # or yum groupinstall -y &#39;development tools&#39;gpg2 --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3curl -L get.rvm.io | bash -s stableusermod -aG rvm administrator # usermod -aG rvm [user]          29 Nov 2016       View (100)       Comment (100)                        Git reset        git reset [commit] # reset local to that commitgit stash # save changesgit push -f # force push to remotegit stash pop # load changesgit status # commit list has change to that commit with changes after it          23 Nov 2016       View (100)       Comment (100)                        Sublime plugin list        Here is the list of my sublime pluginAlignmentBracket HighlighterEditorConfigEmmetFileDiffsBaseEncoderBrowserRefresh # or LiveReloadMarkdownPreview ModificNodejsPrettyJSONSublimeLinterTypescript          08 Jun 2016       View (100)       Comment (100)                        Change yum mirror on Centos        Pick a mirror on http://mirror-status.centos.org/ (e.g. mirror.vastspace.net)          26 Jan 2016       View (100)       Comment (100)                        Setup git on windows        Download and install http://www.git-scm.com/download/win          09 Dec 2015       View (100)       Comment (100)                        Github merge        Merge from master to mybranchgit checkout mastergit pullgit checkout mybranchgit merge mastergit status          24 Nov 2015       View (100)       Comment (100)                        .vimrc        Here is my .vimrc          24 Nov 2015       View (100)       Comment (100)      "
+
+   }
+,
+
+  {
+
+    "title"    : "Home",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/",
+    "date"     : "",
+    "content"  : "                          1                              2                                                                                                      Thoughts about working style        短期目标与长期目标          24 Mar 2017       View (100)       Comment (100)                        Kramdown example preview                  18 Feb 2017       View (100)       Comment (100)                        Birth of jekyll-theme-csdn        Hope this can help some green guys in future :)          15 Feb 2017       View (100)       Comment (100)                        Setup docker on Centos        sudo yum install -y yum-utilssudo yum-config-manager --add-repo https://docs.docker.com/engine/installation/linux/repo_files/centos/docker.reposudo yum makecache fastsudo yum -y install docker-enginesudo service docker startsudo chkconfig docker oncut -d: -f1 /etc/group|grep dockersudo usermod -a -G docker [user]sudo reboot -f          04 Feb 2017       View (100)       Comment (100)                        Two ways to install Xcode command tool          Run xcode-select --install in Terminal or iTerm2, then click Install  Download dmg from official site, then double-click to open and install          10 Jan 2017       View (100)       Comment (100)                        Sublime setting        Here is my sublime setting          10 Jan 2017       View (100)       Comment (100)                        Install vim Typescript plugin          Download vim-plug          28 Dec 2016       View (100)       Comment (100)                        Setup git on Centos        Install gitsudo -iyum install git          29 Nov 2016       View (100)       Comment (100)                        Setup Ruby on Centos        Install RVMsudo -iyum groupinstall -y development # or yum groupinstall -y &#39;development tools&#39;gpg2 --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3curl -L get.rvm.io | bash -s stableusermod -aG rvm administrator # usermod -aG rvm [user]          29 Nov 2016       View (100)       Comment (100)                        Git reset        git reset [commit] # reset local to that commitgit stash # save changesgit push -f # force push to remotegit stash pop # load changesgit status # commit list has change to that commit with changes after it          23 Nov 2016       View (100)       Comment (100)                                1                              2                                                                                                    &amp;laquo;                      &amp;raquo;          "
+
+   }
+,
+
+  {
+
+    "title"    : "Search All",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/search-all/",
+    "date"     : "",
+    "content"  : "  Search                                      "
+
+   }
+,
+
+  {
+
+    "title"    : "Search",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/search/",
+    "date"     : "",
+    "content"  : "  Search                                      "
+
+   }
+,
+
+  {
+
+   }
+,
+
+  {
+
+   }
+,
+
+  {
+
+    "title"    : "Tag",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/tag/",
+    "date"     : "",
+    "content"  : "{% for tag in site.tags %}      {{ tag | first }}  {% endfor %}"
+
+   }
+,
+
+  {
+
+    "title"    : "vim",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/tag/vim/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+    "title"    : "git",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/tag/git/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+    "title"    : "github",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/tag/github/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+    "title"    : "centos",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/tag/centos/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+    "title"    : "sublime",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/tag/sublime/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+    "title"    : "ruby",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/tag/ruby/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+    "title"    : "typescript",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/tag/typescript/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+    "title"    : "macos",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/tag/macos/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+    "title"    : "xcode",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/tag/xcode/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+    "title"    : "docker",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/tag/docker/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+    "title"    : "jekyll",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/tag/jekyll/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+    "title"    : "kramdown",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/tag/kramdown/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+    "title"    : "markdown",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/tag/markdown/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+    "title"    : "stuff",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/tag/stuff/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+    "title"    : "thoughts",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/tag/thoughts/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+    "title"    : "stuff",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/category/stuff/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+    "title"    : "git",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/category/git/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+    "title"    : "sublime",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/category/sublime/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+    "title"    : "ruby",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/category/ruby/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+    "title"    : "docker",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/category/docker/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+    "title"    : "jekyll",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/category/jekyll/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+    "title"    : "thoughts",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/category/thoughts/",
+    "date"     : "",
+    "content"  : ""
+
+   }
+,
+
+  {
+
+   }
+,
+
+  {
+
+   }
+,
+
+  {
+
+   }
+,
+
+  {
+
+   }
+,
+
+  {
+
+   }
+,
+
+  {
+
+   }
+,
+
+  {
+
+   }
+,
+
+  {
+
+   }
+,
+
+  {
+
+   }
+,
+
+  {
+
+   }
+,
+
+  {
+
+   }
+,
+
+  {
+
+   }
+,
+
+  {
+
+   }
+,
+
+  {
+
+    "title"    : "Home",
+    "category" : "",
+    "tags"     : "",
+    "url"      : "/blog-csdn/page/2/",
+    "date"     : "",
+    "content"  : "{% include paginate.html %}{% include paginate_content.html %}{% include paginate.html %}      {% if paginator.previous_page %}          &amp;laquo;        {% else %}          &amp;laquo;        {% endif %}    {% if paginator.next_page %}          &amp;raquo;        {% else %}          &amp;raquo;        {% endif %}  "
+
+   }
+,
+
+  {
+
+   }
+,
+
+  {
+
+   }
+
+
+]

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>sublime - MoYummy's Blog</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="/blog-csdn/css/csdn.css" rel="stylesheet" type="text/css">
+    <script src="http://cdn.bootcss.com/bootstrap-hover-dropdown/2.0.10/bootstrap-hover-dropdown.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-sidebar/3.3.2/jquery.sidebar.min.js"></script>
+    <script src="https://cdn.bootcss.com/simple-jekyll-search/1.1.5/jekyll-search.min.js"></script>
+  </head>
+  <body>
+
+<a href="https://github.com/iMoYummy/jekyll-theme-csdn"><img style="position: absolute; top: 0; left: 0; border: 0; z-index: 9999" src="https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>
+
+<div id="top" class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#csdn-navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/blog-csdn/">
+        <span class="glyphicon glyphicon-euro" aria-hidden="true"></span> Blog
+      </a>
+    </div>
+
+    <div id="csdn-navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a id="nav-search" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="nav-search">
+            <li class="input-group">
+              <input id="sidebar-post-search" type="text" class="form-control" disabled>
+              <span class="input-group-btn">
+                <button class="btn btn-default" href="/blog-csdn/search"><span class="glyphicon glyphicon-search" onclick="openSearch()"></span></button>
+              </span>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a id="nav-bookmark" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false"><span class="glyphicon glyphicon-star"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="nav-bookmark">
+            <li class="disabled"><a>Favorite</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a id="nav-notification" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false"><span class="glyphicon glyphicon-bell"></span><span class="badge">1</span></a>
+          <ul class="dropdown-menu" aria-labelledby="nav-notification">
+            <li class="disabled"><a>Notification</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a id="nav-action" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false"><span class="glyphicon glyphicon-edit"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="nav-action">
+            <li class="disabled"><a href="#"><span class="glyphicon glyphicon-blackboard"></span> Upload PPT/Document</a></li>
+            <li class="disabled"><a href="#"><span class="glyphicon glyphicon-comment"></span> Ask question</a></li>
+            <li class="disabled"><a href="#"><span class="glyphicon glyphicon-edit"></span> Post</a></li>
+            <li class="disabled"><a href="#"><span class="glyphicon glyphicon-cloud-upload"></span> Upload</a></li>
+            <li class="disabled"><a href="#"><span class="glyphicon glyphicon-file"></span> Create project</a></li>
+            <li class="disabled"><a href="#"><span class="glyphicon glyphicon-console"></span> Create snippets</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a id="nav-user" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false"><span class="glyphicon glyphicon-user"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="nav-user">
+            <li><a href="/blog-csdn/about">About</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a id="nav-menu" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="nav-menu">
+            <li><a href="/blog-csdn/category">Category</a></li>
+            <li><a href="/blog-csdn/tag">Tag</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <div class="container">
+    <a href="/blog-csdn/" class="nounderline"><h1>MoYummy's Blog</h1></a>
+  </div>
+</div>
+
+<div class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#csdn-navbar-second" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div id="csdn-navbar-second" class="collapse navbar-collapse">
+      <form class="navbar-form navbar-right">
+        <a class="btn btn-primary" href="/blog-csdn/archive"><span class="glyphicon glyphicon-th-list"></span> Archive</a>
+        <a class="btn btn-success" href="/blog-csdn/excerpt"><span class="glyphicon glyphicon-tasks"></span> Excerpt</a>
+        <a class="btn btn-info" href="/blog-csdn/feed.xml"><span class="badge">RSS</span> Feed</a>
+        <a class="btn btn-warning" href="#" disabled="disabled"><span class="glyphicon glyphicon-cog"></span> Admin</a>
+        <a class="btn btn-danger" href="#" disabled="disabled"><span class="glyphicon glyphicon-edit"></span> Post</a>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="container col-md-3 visible-lg-block">
+<div class="panel panel-default">
+  <div class="panel-heading">Profile</div>
+  <div class="panel-body list-group">
+    <li class="list-group-item">
+      <a href="/blog-csdn/" class="thumbnail">
+        <img src="/blog-csdn/assets/logo.png" alt="Mo Yummy">
+      </a>
+      <div class="text-center">Mo Yummy</div>
+      <div class="text-center">
+        <a href="https://github.com/iMoYummy/jekyll-theme-csdn" class="label label-success"><span class="glyphicon glyphicon-plus"></span> Follow</a>
+        <a class="label label-success"><span class="glyphicon glyphicon-home"></span> Message</a>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div class="row"><div class="col-md-12">View: N/A</div></div>
+      <div class="row"><div class="col-md-12">Credit: N/A</div></div>
+      <div class="row"><div class="col-md-12">Level: <span class="badge">BLOG</span></div></div>
+      <div class="row"><div class="col-md-12">Rank: Beyond horizon</div></div>
+    </li>
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-md-6">Original:15</div><div class="col-md-6">Share:N/A</div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">Translation:N/A</div><div class="col-md-6">Comment:N/A</div>
+      </div>
+    </li>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Search</div>
+  <div class="panel-body">
+    <div class="input-group">
+      <input id="sidebar-post-search" type="text" class="form-control" disabled>
+      <span class="input-group-btn">
+        <button class="btn btn-default" href="/blog-csdn/search"><span class="glyphicon glyphicon-search" onclick="openSearch()"></span></button>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Category</div>
+  <div class="panel-body list-group">
+
+    <a href="/blog-csdn/category/stuff" class="list-group-item">
+      stuff<span class="badge">7</span>
+    </a>
+
+    <a href="/blog-csdn/category/git" class="list-group-item">
+      git<span class="badge">3</span>
+    </a>
+
+    <a href="/blog-csdn/category/sublime" class="list-group-item">
+      sublime<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/category/ruby" class="list-group-item">
+      ruby<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/category/docker" class="list-group-item">
+      docker<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/category/jekyll" class="list-group-item">
+      jekyll<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/category/thoughts" class="list-group-item">
+      thoughts<span class="badge">1</span>
+    </a>
+
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">Tag</div>
+  <div class="panel-body list-group">
+
+    <a href="/blog-csdn/tag/vim" class="list-group-item">
+      vim<span class="badge">3</span>
+    </a>
+
+    <a href="/blog-csdn/tag/git" class="list-group-item">
+      git<span class="badge">3</span>
+    </a>
+
+    <a href="/blog-csdn/tag/github" class="list-group-item">
+      github<span class="badge">2</span>
+    </a>
+
+    <a href="/blog-csdn/tag/centos" class="list-group-item">
+      centos<span class="badge">4</span>
+    </a>
+
+    <a href="/blog-csdn/tag/sublime" class="list-group-item">
+      sublime<span class="badge">2</span>
+    </a>
+
+    <a href="/blog-csdn/tag/ruby" class="list-group-item">
+      ruby<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/tag/typescript" class="list-group-item">
+      typescript<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/tag/macos" class="list-group-item">
+      macos<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/tag/xcode" class="list-group-item">
+      xcode<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/tag/docker" class="list-group-item">
+      docker<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/tag/jekyll" class="list-group-item">
+      jekyll<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/tag/kramdown" class="list-group-item">
+      kramdown<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/tag/markdown" class="list-group-item">
+      markdown<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/tag/stuff" class="list-group-item">
+      stuff<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/tag/thoughts" class="list-group-item">
+      thoughts<span class="badge">1</span>
+    </a>
+
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">Archive</div>
+  <div class="panel-body list-group">
+
+  
+  
+    <a href="/blog-csdn/2017/03" class="list-group-item">
+      Mar 2017<span class="badge">1</span>
+    </a>
+    
+  
+  
+  
+  
+  
+  
+  
+    <a href="/blog-csdn/2017/02" class="list-group-item">
+      Feb 2017<span class="badge">1</span>
+    </a>
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    <a href="/blog-csdn/2017/01" class="list-group-item">
+      Jan 2017<span class="badge">1</span>
+    </a>
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    <a href="/blog-csdn/2016/12" class="list-group-item">
+      Dec 2016<span class="badge">1</span>
+    </a>
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    <a href="/blog-csdn/2016/11" class="list-group-item">
+      Nov 2016<span class="badge">1</span>
+    </a>
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    <a href="/blog-csdn/2016/06" class="list-group-item">
+      Jun 2016<span class="badge">1</span>
+    </a>
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    <a href="/blog-csdn/2016/01" class="list-group-item">
+      Jan 2016<span class="badge">1</span>
+    </a>
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    <a href="/blog-csdn/2015/12" class="list-group-item">
+      Dec 2015<span class="badge">1</span>
+    </a>
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    <a href="/blog-csdn/2015/11" class="list-group-item">
+      Nov 2015<span class="badge">1</span>
+    </a>
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">View</div>
+  <div class="panel-body">
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">Comment</div>
+  <div class="panel-body">
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">Recommendation</div>
+  <div class="panel-body">
+  </div>
+</div>
+    </div>
+    <div class="container col-md-9">
+      <div class="list-group">
+
+  <div class="list-group-item">
+    <div>
+
+      <span class="glyphicon glyphicon-file"></span>
+
+      <a href="/blog-csdn/2016/06/08/Sublime-plugin-list/" class="nounderline"><h1>Sublime plugin list</h1></a>
+    </div>
+    <div>Here is the list of my sublime plugin
+Alignment
+Bracket Highlighter
+EditorConfig
+Emmet
+FileDiffs
+BaseEncoder
+BrowserRefresh # or LiveReload
+MarkdownPreview 
+Modific
+Nodejs
+PrettyJSON
+SublimeLinter
+Typescript
+
+
+</div>
+    <div class="text-right">
+      <span class="date">08 Jun 2016</span>
+      <span class="glyphicon glyphicon-search"></span> <a href="/blog-csdn/2016/06/08/Sublime-plugin-list/" class="nounderline">View</a> (100)
+      <span class="glyphicon glyphicon-comment"></span> Comment (100)
+    </div>
+  </div>
+
+</div>
+      <div class="text-right"><a href="#top"><span class="badge"><span class="glyphicon glyphicon-chevron-up"></span> Return to top</span></a></div>
+    </div>
+  </div>
+</div>
+
+
+<script src="/blog-csdn/js/csdn.js"></script>
+<script type="text/javascript">
+function openSearch() {
+  top.location.href = "/blog-csdn/search?q=" + document.getElementById("sidebar-post-search").value
+}
+</script>
+    <div class="container text-center">
+        <a href="mailto:mo_yummy@sina.cn"><span class="glyphicon glyphicon-envelope"></span></a>
+        <span class="glyphicon glyphicon-copyright-mark"></span> 2017 Mo Yummy
+        <div>Powered by Jekyll and Bootstrap</div>
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+    </div>
+  </body>
+</html>

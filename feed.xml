@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="/blog-csdn/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog-csdn/" rel="alternate" type="text/html" /><updated>2017-05-08T20:49:15+08:00</updated><id>/blog-csdn/</id><entry><title type="html">Thoughts about working style</title><link href="/blog-csdn/2017/03/24/Thoughts-about-working-style/" rel="alternate" type="text/html" title="Thoughts about working style" /><published>2017-03-24T15:48:00+08:00</published><updated>2017-03-24T15:48:00+08:00</updated><id>/blog-csdn/2017/03/24/Thoughts-about-working-style</id><content type="html" xml:base="/blog-csdn/2017/03/24/Thoughts-about-working-style/">&lt;h3 id=&quot;短期目标与长期目标&quot;&gt;短期目标与长期目标&lt;/h3&gt;
+
+&lt;p&gt;以Best Practice的方式做一个User Story，假设需要10个mhr。&lt;/p&gt;
+
+&lt;p&gt;以Work Around的方式先做一个prototype、或者为了某个可demo的目标，假设需要3个mhr。&lt;/p&gt;
+
+&lt;p&gt;但是，从这样一个短期的实现，到最终的完成，并没有足够的重用性，也就是，之后还需要10个mhr。&lt;/p&gt;
+
+&lt;p&gt;如果把重用性考虑进去，那么短期的目标需要8个mhr，之后继续做需要3个mhr。&lt;/p&gt;
+
+&lt;p&gt;可能真实情况下，单就一个User Story，两者差的不多，从长期看，孰优孰劣，一目了然，好比O(log(n))和O(n)&lt;/p&gt;
+
+&lt;table class=&quot;table table-bordered table-striped table-condensed&quot;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;index&lt;/th&gt;
+    &lt;th&gt;mhr&lt;/th&gt;
+    &lt;th&gt;mhr&lt;/th&gt;
+    &lt;th&gt;mhr&lt;/th&gt;
+    &lt;th&gt;mhr&lt;/th&gt;
+    &lt;th&gt;mhr&lt;/th&gt;
+    &lt;th&gt;mhr&lt;/th&gt;
+    &lt;th&gt;mhr&lt;/th&gt;
+    &lt;th&gt;mhr&lt;/th&gt;
+    &lt;th&gt;mhr&lt;/th&gt;
+    &lt;th&gt;mhr&lt;/th&gt;
+    &lt;th&gt;mhr&lt;/th&gt;
+    &lt;th&gt;mhr&lt;/th&gt;
+    &lt;th&gt;mhr&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td colspan=&quot;10&quot; align=&quot;center&quot;&gt;Best Practice&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td colspan=&quot;3&quot; align=&quot;center&quot;&gt;Work Around&lt;/td&gt;
+    &lt;td colspan=&quot;10&quot; align=&quot;center&quot;&gt;Rest&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td colspan=&quot;8&quot; align=&quot;center&quot;&gt;Demo&lt;/td&gt;
+    &lt;td colspan=&quot;3&quot; align=&quot;center&quot;&gt;Rest&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</content><author><name></name></author><category term="stuff" /><category term="thoughts" /><summary type="html">短期目标与长期目标</summary></entry><entry><title type="html">Kramdown example preview</title><link href="/blog-csdn/2017/02/18/Kramdown-example-preview/" rel="alternate" type="text/html" title="Kramdown example preview" /><published>2017-02-18T19:41:00+08:00</published><updated>2017-02-18T19:41:00+08:00</updated><id>/blog-csdn/2017/02/18/Kramdown-example-preview</id><content type="html" xml:base="/blog-csdn/2017/02/18/Kramdown-example-preview/">&lt;hr /&gt;
+
+&lt;p&gt;This `is not a code` span!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;first-level-header&quot;&gt;First level header&lt;/h1&gt;
+
+&lt;h2 id=&quot;second-level-header&quot;&gt;Second level header&lt;/h2&gt;
+
+&lt;h1 id=&quot;other-first-level-header&quot;&gt;Other first level header&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;This is a normal
+paragraph.&lt;/p&gt;
+
+&lt;h2 id=&quot;and-a-header&quot;&gt;And A Header&lt;/h2&gt;
+&lt;p&gt;And a paragraph&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is a blockquote.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;and-a-header-1&quot;&gt;And A Header&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;header&quot;&gt;header&lt;/h2&gt;
+&lt;p&gt;para&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;first-level-header-1&quot;&gt;First level header&lt;/h1&gt;
+
+&lt;h3 id=&quot;third-level-header&quot;&gt;Third level header&lt;/h3&gt;
+
+&lt;h2 id=&quot;second-level-header-1&quot;&gt;Second level header&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;id&quot;&gt;Hello&lt;/h2&gt;
+
+&lt;h1 id=&quot;id&quot;&gt;Hello&lt;/h1&gt;
+
+&lt;h1 id=&quot;id&quot;&gt;Hello&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is a blockquote.
+    on multiple lines
+that may be lazy.&lt;/p&gt;
+
+  &lt;p&gt;This is the second paragraph.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+  &lt;blockquote&gt;
+    &lt;p&gt;A nested blockquote.&lt;/p&gt;
+  &lt;/blockquote&gt;
+
+  &lt;h2 id=&quot;headers-work&quot;&gt;Headers work&lt;/h2&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;lists too&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;and all other block-level elements&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A code block:&lt;/p&gt;
+
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ruby -e 'puts :works'
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is a paragraph inside
+a blockquote.&lt;/p&gt;
+
+  &lt;blockquote&gt;
+    &lt;p&gt;This is a nested paragraph
+that continues here
+and here
+and here&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Here comes some code
+
+This text belongs to the same code block.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Here comes some code
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This one is separate.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Here comes some code.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;what?&lt;/span&gt;
+  &lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;what?&lt;/span&gt;
+  &lt;span class=&quot;mi&quot;&gt;42&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;kram&lt;/li&gt;
+  &lt;li&gt;down&lt;/li&gt;
+  &lt;li&gt;now&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;kram&lt;/li&gt;
+  &lt;li&gt;down&lt;/li&gt;
+  &lt;li&gt;now&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This is the first line. Since the first non-space characters appears in
+column 3, all other indented lines have to be indented 2 spaces.
+However, one could be lazy and not indent a line but this is not
+recommended.&lt;/li&gt;
+  &lt;li&gt;This is the another item of the list. It uses a different number
+   of spaces for indentation which is okay but should generally be avoided.&lt;/li&gt;
+  &lt;li&gt;The list item marker is indented 3 spaces which is allowed but should
+also be avoided and starts the third list item. Note that the lazy
+line in the second list item may make you believe that this is a
+sub-list which it isn’t! So avoid being lazy!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This is the first list item bla blabla blabla blabla blabla blabla
+blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla
+blabla blabla blabla bla&lt;/li&gt;
+  &lt;li&gt;This is the another item of the list. bla blabla blabla blabla blabla
+blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;list 1 item 1&lt;/li&gt;
+  &lt;li&gt;list 1 item 2 (indent 1 space)&lt;/li&gt;
+  &lt;li&gt;list 1 item 3 (indent 2 spaces)&lt;/li&gt;
+  &lt;li&gt;list 1 item 4  (indent 3 spaces)
+    * lazy text belonging to above item 4&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;list 1 item 1&lt;/li&gt;
+  &lt;li&gt;list 1 item 2 (indent 1 space)&lt;/li&gt;
+  &lt;li&gt;list 1 item 3 (indent 2 spaces)&lt;/li&gt;
+  &lt;li&gt;list 1 item 4  (indent 3 spaces)
+    5. lazy text belonging to above item 4&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;list 1 item 1
+    &lt;ul&gt;
+      &lt;li&gt;nested list item 1&lt;/li&gt;
+      &lt;li&gt;nested list item 2&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;list 1 item 2
+    &lt;ul&gt;
+      &lt;li&gt;nested list item 1&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;list 1 item 1
+    &lt;ol&gt;
+      &lt;li&gt;nested list item 1&lt;/li&gt;
+      &lt;li&gt;nested list item 2&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;list 1 item 2
+    &lt;ol&gt;
+      &lt;li&gt;nested list item 1&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;text for this list item
+further text (indent 3 spaces)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;text for this list item
+further text (indent 4 spaces)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Using a tab to indent this line, the tab only counts as three spaces
+and therefore the overall indentation is four spaces.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The tab after the marker counts here as three spaces. Since the
+indentation of the marker is three spaces and the marker itself
+takes two characters, the overall indentation needed for the
+following lines is eight spaces or two tabs.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;kram&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;down&lt;/li&gt;
+  &lt;li&gt;now&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Not wrapped in a paragraph&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Wrapped in a paragraph due to the following blank line.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Also wrapped in a paragraph due to the
+following blank line and the EOB marker.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;First list item&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Second list item&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Last list item&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;First item&lt;/p&gt;
+
+    &lt;p&gt;A second paragraph&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;nested list&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;blockquote&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Second item&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;This is a list item.&lt;/p&gt;
+
+    &lt;p&gt;The second para of the list item.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;A code block following the list item.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;List one&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+  &lt;li&gt;List two&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;This is just text.
+    &lt;ul&gt;
+      &lt;li&gt;this is a sub list item
+        &lt;ul&gt;
+          &lt;li&gt;this is a sub sub list item&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;This is just text,
+  spanning two lines
+    &lt;ul&gt;
+      &lt;li&gt;this is a nested list item.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;1984. It was great
+- others say that, too!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li class=&quot;cls&quot;&gt;
+    &lt;p&gt;This item has the class “cls”.
+Here continues the above paragraph.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;This is a normal list item.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;kramdown&lt;/dt&gt;
+  &lt;dd&gt;A Markdown-superset converter&lt;/dd&gt;
+  &lt;dt&gt;Maruku&lt;/dt&gt;
+  &lt;dd&gt;Another Markdown-superset converter&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;hr /&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;definition term 1&lt;/dt&gt;
+  &lt;dt&gt;definition term 2&lt;/dt&gt;
+  &lt;dd&gt;This is the first line. Since the first non-space characters appears in
+column 3, all other lines have to be indented 2 spaces (or lazy syntax may
+be used after an indented line). This tells kramdown that the lines
+belong to the definition.&lt;/dd&gt;
+  &lt;dd&gt;This is the another definition for the same term. It uses a
+different number of spaces for indentation which is okay but
+should generally be avoided.&lt;/dd&gt;
+  &lt;dd&gt;The definition marker is indented 3 spaces which is allowed but
+should also be avoided.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;hr /&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;definition term&lt;/dt&gt;
+  &lt;dd&gt;This definition will just be text because it would normally be a
+paragraph and the there is no preceding blank line.
+
+    &lt;blockquote&gt;
+      &lt;p&gt;although the definition contains other block-level elements&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/dd&gt;
+  &lt;dd&gt;
+    &lt;p&gt;This definition &lt;em&gt;will&lt;/em&gt; be a paragraph since it is preceded by a
+blank line.&lt;/p&gt;
+  &lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;hr /&gt;
+
+&lt;dl&gt;
+  &lt;dt id=&quot;term&quot;&gt;Term with id=”term”&lt;/dt&gt;
+  &lt;dd class=&quot;cls&quot;&gt;Definition with class “cls”&lt;/dd&gt;
+  &lt;dt id=&quot;term1&quot;&gt;First term&lt;/dt&gt;
+  &lt;dt id=&quot;term2&quot;&gt;Second term&lt;/dt&gt;
+  &lt;dd class=&quot;cls&quot;&gt;Definition&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;hr /&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;First cell&lt;/td&gt;
+      &lt;td&gt;Second cell&lt;/td&gt;
+      &lt;td&gt;Third cell&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;First&lt;/td&gt;
+      &lt;td&gt;Second&lt;/td&gt;
+      &lt;td&gt;Third&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;First&lt;/td&gt;
+      &lt;td&gt;Second&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Fourth&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;|—-+—-|
++—-|—-+
+|———|
+|-
+| :—–: |&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;|-&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;|—+—+—|&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;:-: |:——| —:|
+| :-: :- -: -
+:-: | :-&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;|====+====|
++====|====+
+|=========|
+|=&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Default aligned&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Left aligned&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Center aligned&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Right aligned&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;First body part&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Second cell&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Third cell&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;fourth cell&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Second line&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;foo&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;strong&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;baz&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Third line&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;quux&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;baz&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;bar&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Second body&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2 line&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Footer row&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Default aligned&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Left aligned&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Center aligned&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Right aligned&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;First body part&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Second cell&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Third cell&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;fourth cell&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Second line&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;foo&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;strong&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;baz&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Third line&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;quux&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;baz&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;bar&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Second body&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2 line&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Footer row&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align*}
+  &amp; \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  &amp; (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) &amp; \cdots &amp; \phi(e_1, e_n) \\
+      \vdots &amp; \ddots &amp; \vdots \\
+      \phi(e_n, e_1) &amp; \cdots &amp; \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{align*} %]]&gt;&lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The following is a math block:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;5 + 5&lt;/script&gt;
+
+&lt;p&gt;But next comes a paragraph with an inline math statement:&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;5 + 5&lt;/script&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;$$ 5 + 5 $$&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;This is a para.&lt;/p&gt;
+&lt;div&gt;
+Something in here.
+&lt;/div&gt;
+&lt;p&gt;Other para.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;This is a para.&lt;/p&gt;
+&lt;div&gt;
+Something in here.
+&lt;/div&gt;
+&lt;p&gt;Other para.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div id=&quot;content&quot;&gt;&lt;div id=&quot;layers&quot;&gt;&lt;div id=&quot;layer1&quot;&gt;
+This is some text in the `layer1` div.
+&lt;/div&gt;
+This is some text in the `layers` div.
+&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This is a para outside the &lt;abbr class=&quot;mega-big&quot; title=&quot;HyperTextMarkupLanguage&quot;&gt;HTML&lt;/abbr&gt; block.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div&gt;
+  &lt;p&gt;This is the first part of a para,
+which is continued here.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This works without problems because it is parsed as
+span-level elements&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;p&gt;The end tag is not found because
+this line is parsed as a paragraph&amp;lt;/div&amp;gt;&lt;/p&gt;
+
+  &lt;hr /&gt;
+
+  &lt;p&gt;This is a para.&lt;/p&gt;
+  &lt;div&gt;
+    &lt;p&gt;Another para.
+&amp;lt;/p&amp;gt;&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;This is a para.&lt;/p&gt;
+    &lt;div&gt;
+  &lt;p&gt;Another para.&lt;/p&gt;
+&lt;/div&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;This is a para.
+&lt;!-- a *comment* --&gt;
+&lt;? a processing `instruction`
+   spanning multiple lines
+?&gt; First part of para,
+continues here.&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;Information can be found on the &lt;a href=&quot;http://example.com&quot;&gt;http://example.com&lt;/a&gt; homepage.
+You can also mail me: &lt;a href=&quot;mailto:me.example@example.com&quot;&gt;me.example@example.com&lt;/a&gt;&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;This is &lt;a href=&quot;http://rubyforge.org&quot;&gt;a link&lt;/a&gt; to a page.
+A &lt;a href=&quot;../test&quot; title=&quot;local URI&quot;&gt;link&lt;/a&gt; can also have a title.
+And &lt;a href=&quot;link with spaces.html&quot;&gt;spaces&lt;/a&gt;!&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;This is a &lt;a href=&quot;http://example.com&quot; hreflang=&quot;de&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;This is a &lt;a hreflang=&quot;de&quot; href=&quot;http://example.com&quot;&gt;reference style link&lt;/a&gt; to a page. And &lt;a hreflang=&quot;de&quot; href=&quot;http://example.com&quot;&gt;this&lt;/a&gt; is also a link. As is [this][] and [THIS].&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;The next paragraph contains a link and some text.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;link_to_room_100.html&quot;&gt;Room 100&lt;/a&gt;: There you should find everything you need!&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;Here comes a &lt;img src=&quot;../images/smiley.png&quot; alt=&quot;smiley&quot; /&gt;! And here
+&lt;img src=&quot;../images/other.png&quot; alt=&quot;too&quot; title=&quot;Title text&quot; /&gt;. Or ![here].
+With empty alt text &lt;img src=&quot;see.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;Here is an inline &lt;img src=&quot;smiley.png&quot; alt=&quot;smiley&quot; height=&quot;36px&quot; width=&quot;36px&quot; /&gt;.&lt;/p&gt;
+
+    &lt;p&gt;And here is a referenced &lt;img height=&quot;36px&quot; width=&quot;36px&quot; src=&quot;smile.png&quot; alt=&quot;smile&quot; /&gt;&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;&lt;em&gt;some text&lt;/em&gt;
+&lt;em&gt;some text&lt;/em&gt;
+&lt;strong&gt;some text&lt;/strong&gt;
+&lt;strong&gt;some text&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;This is un&lt;em&gt;believe&lt;/em&gt;able! This d_oe_s not work!&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;This is a &lt;strong&gt;&lt;em&gt;text with light and strong emphasis&lt;/em&gt;&lt;/strong&gt;.
+This &lt;strong&gt;is &lt;em&gt;emphasized&lt;/em&gt; as well&lt;/strong&gt;.
+This &lt;em&gt;does _not_ work&lt;/em&gt;.
+This &lt;strong&gt;does __not__ work either&lt;/strong&gt;.&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;This is a * literal asterisk.
+These are ** two literal asterisk.
+As *are* these!&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;Use &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;&lt;/code&gt; tags for this.&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;Here is a literal &lt;code class=&quot;highlighter-rouge&quot;&gt;`&lt;/code&gt; backtick.
+And here is &lt;code class=&quot;highlighter-rouge&quot;&gt; `some` &lt;/code&gt; text (note the two spaces so that one is left
+in the output!).&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;This is a ` literal backtick.
+As `are` these!&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;This is a Ruby code fragment &lt;code class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Class&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;This is .&lt;/p&gt;
+
+    &lt;p&gt;This &lt;span&gt;is automatically closed.&lt;/span&gt;&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;Link: &lt;a href=&quot;some link&quot;&gt;text&lt;/a&gt;&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;Link: &lt;a href=&quot;some link&quot;&gt;text&lt;/a&gt;&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;This is some text.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Other text.&lt;sup id=&quot;fnref:footnote&quot;&gt;&lt;a href=&quot;#fn:footnote&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;This is some text not written in &lt;abbr class=&quot;mega-big&quot; title=&quot;HyperTextMarkupLanguage&quot;&gt;HTML&lt;/abbr&gt; but in &lt;abbr title=&quot;It's called Markdown&quot;&gt;another language&lt;/abbr&gt;!&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;list item one&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;list item two&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;hr /&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;list one&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul&gt;
+      &lt;li&gt;list two&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;hr /&gt;
+
+    &lt;hr /&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p id=&quot;para-one&quot;&gt;A simple paragraph with an ID attribute.&lt;/p&gt;
+
+    &lt;blockquote title=&quot;The blockquote title&quot; id=&quot;myid&quot;&gt;
+      &lt;p&gt;A blockquote with a title&lt;/p&gt;
+    &lt;/blockquote&gt;
+
+    &lt;div class=&quot;ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Some code here
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;This &lt;em class=&quot;underline&quot;&gt;is&lt;/em&gt; some &lt;code id=&quot;id&quot; class=&quot;class highlighter-rouge&quot;&gt;code&lt;/code&gt;.
+A &lt;a href=&quot;test.html&quot; rel=&quot;something&quot;&gt;link&lt;/a&gt; and some &lt;strong class=&quot;tools&quot;&gt;tools&lt;/strong&gt;.&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;p&gt;This &lt;em&gt;is italic&lt;/em&gt;&lt;em class=&quot;special&quot;&gt;marked&lt;/em&gt; text&lt;/p&gt;
+
+    &lt;hr /&gt;
+
+    &lt;!-- This text is completely ignored by kramdown - a comment in the text. --&gt;
+
+    &lt;p&gt;Do you see &lt;!-- this text --&gt;?
+&lt;!-- some other comment --&gt;&lt;/p&gt;
+
+    &lt;hr /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Some &lt;em&gt;crazy&lt;/em&gt; footnote definition.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:footnote&quot;&gt;
+
+      &lt;blockquote&gt;
+        &lt;p&gt;Blockquotes can be in a footnote.&lt;/p&gt;
+      &lt;/blockquote&gt;
+
+      &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;as well as code blocks
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+
+      &lt;p&gt;or, naturally, simple paragraphs.&amp;nbsp;&lt;a href=&quot;#fnref:footnote&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="kramdown" /><category term="markdown" /><summary type="html"></summary></entry><entry><title type="html">Birth of jekyll-theme-csdn</title><link href="/blog-csdn/2017/02/15/Birth-of-jekyll-theme-csdn/" rel="alternate" type="text/html" title="Birth of jekyll-theme-csdn" /><published>2017-02-15T12:00:00+08:00</published><updated>2017-02-15T12:00:00+08:00</updated><id>/blog-csdn/2017/02/15/Birth-of-jekyll-theme-csdn</id><content type="html" xml:base="/blog-csdn/2017/02/15/Birth-of-jekyll-theme-csdn/">&lt;p&gt;Hope this can help some green guys in future :)&lt;/p&gt;
+
+&lt;p&gt;Here are the reference links&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://v3.bootcss.com/components/&quot;&gt;bootstrap(cn)&lt;/a&gt; / &lt;a href=&quot;http://getbootstrap.com/components/&quot;&gt;bootstrap(en)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/CWSpear/bootstrap-hover-dropdown&quot;&gt;bootstrap-hover-dropdown&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://iamstarkov.com/deploy-gh-pages-from-travis/&quot;&gt;deploy via travis&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://choosealicense.com/non-software/&quot;&gt;choose blog license&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://kramdown.gettalong.org/syntax.html&quot;&gt;kramdown syntax&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/christian-fei/Simple-Jekyll-Search&quot;&gt;simple jekyll search&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/iHavee/iHavee.github.io&quot;&gt;reference repo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/platinhom/platinhom.github.com&quot;&gt;reference repo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/poole/lanyon&quot;&gt;reference repo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="jekyll" /><summary type="html">Hope this can help some green guys in future :)</summary></entry><entry><title type="html">Setup docker on Centos</title><link href="/blog-csdn/2017/02/04/Setup-docker-on-Centos/" rel="alternate" type="text/html" title="Setup docker on Centos" /><published>2017-02-04T16:30:00+08:00</published><updated>2017-02-04T16:30:00+08:00</updated><id>/blog-csdn/2017/02/04/Setup-docker-on-Centos</id><content type="html" xml:base="/blog-csdn/2017/02/04/Setup-docker-on-Centos/">&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo yum install -y yum-utils
+sudo yum-config-manager --add-repo https://docs.docker.com/engine/installation/linux/repo_files/centos/docker.repo
+sudo yum makecache fast
+sudo yum -y install docker-engine
+sudo service docker start
+sudo chkconfig docker on
+cut -d: -f1 /etc/group|grep docker
+sudo usermod -a -G docker [user]
+sudo reboot -f
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then try pulling an image like&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker pull jenkins
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="docker" /><category term="centos" /><summary type="html">sudo yum install -y yum-utils sudo yum-config-manager --add-repo https://docs.docker.com/engine/installation/linux/repo_files/centos/docker.repo sudo yum makecache fast sudo yum -y install docker-engine sudo service docker start sudo chkconfig docker on cut -d: -f1 /etc/group|grep docker sudo usermod -a -G docker [user] sudo reboot -f</summary></entry><entry><title type="html">Two ways to install Xcode command tool</title><link href="/blog-csdn/2017/01/10/Two-ways-to-install-Xcode-command-tool/" rel="alternate" type="text/html" title="Two ways to install Xcode command tool" /><published>2017-01-10T21:07:00+08:00</published><updated>2017-01-10T21:07:00+08:00</updated><id>/blog-csdn/2017/01/10/Two-ways-to-install-Xcode-command-tool</id><content type="html" xml:base="/blog-csdn/2017/01/10/Two-ways-to-install-Xcode-command-tool/">&lt;ol&gt;
+  &lt;li&gt;Run &lt;code class=&quot;highlighter-rouge&quot;&gt;xcode-select --install&lt;/code&gt; in &lt;code class=&quot;highlighter-rouge&quot;&gt;Terminal&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;iTerm2&lt;/code&gt;, then click &lt;code class=&quot;highlighter-rouge&quot;&gt;Install&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Download &lt;code class=&quot;highlighter-rouge&quot;&gt;dmg&lt;/code&gt; from &lt;a href=&quot;https://developer.apple.com/download/more/&quot;&gt;official site&lt;/a&gt;, then double-click to open and install&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="macos" /><category term="xcode" /><summary type="html">Run xcode-select --install in Terminal or iTerm2, then click Install Download dmg from official site, then double-click to open and install</summary></entry><entry><title type="html">Sublime setting</title><link href="/blog-csdn/2017/01/10/My-sublime-setting/" rel="alternate" type="text/html" title="Sublime setting" /><published>2017-01-10T13:32:00+08:00</published><updated>2017-01-10T13:32:00+08:00</updated><id>/blog-csdn/2017/01/10/My-sublime%20setting</id><content type="html" xml:base="/blog-csdn/2017/01/10/My-sublime-setting/">&lt;p&gt;Here is my sublime setting&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;ignored_packages&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Vintage&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;translate_tabs_to_spaces&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;draw_white_space&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;all&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;indent_to_bracket&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;word_wrap&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;highlight_modified_tabs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;highlight_line&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;open_files_in_new_window&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="sublime" /><summary type="html">Here is my sublime setting</summary></entry><entry><title type="html">Install vim Typescript plugin</title><link href="/blog-csdn/2016/12/28/Install-vim-Typescript-plugin/" rel="alternate" type="text/html" title="Install vim Typescript plugin" /><published>2016-12-28T01:29:00+08:00</published><updated>2016-12-28T01:29:00+08:00</updated><id>/blog-csdn/2016/12/28/Install-vim-Typescript-plugin</id><content type="html" xml:base="/blog-csdn/2016/12/28/Install-vim-Typescript-plugin/">&lt;ul&gt;
+  &lt;li&gt;Download &lt;code class=&quot;highlighter-rouge&quot;&gt;vim-plug&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Download &lt;code class=&quot;highlighter-rouge&quot;&gt;typescript-vim plugin&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/leafgarland/typescript-vim.git ~/.vim/bundle/typescript-vim
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Add config of &lt;code class=&quot;highlighter-rouge&quot;&gt;typescript-vim&lt;/code&gt; in &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.vimrc&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;call plug#begin('~/.vim/plugged')
+Plug 'leafgarland/typescript-vim'
+call plug#end()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Open &lt;code class=&quot;highlighter-rouge&quot;&gt;vim&lt;/code&gt; and enter &lt;code class=&quot;highlighter-rouge&quot;&gt;:PlugInstall&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="vim" /><category term="typescript" /><summary type="html">Download vim-plug</summary></entry><entry><title type="html">Setup git on Centos</title><link href="/blog-csdn/2016/11/29/Setup-git-on-Centos/" rel="alternate" type="text/html" title="Setup git on Centos" /><published>2016-11-29T14:00:00+08:00</published><updated>2016-11-29T14:00:00+08:00</updated><id>/blog-csdn/2016/11/29/Setup-git-on-Centos</id><content type="html" xml:base="/blog-csdn/2016/11/29/Setup-git-on-Centos/">&lt;p&gt;Install &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo -i
+yum install git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Create ssh key&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd ~
+mkdir .ssh
+chmod 700 .ssh
+cd .ssh
+ssh-keygen # enter, enter, enter
+mv id_rsa moyummygit
+mv id_rsa.pub moyummygit.pub
+cat moyummygit.pub # &quot;ssh-rsa [blahblahblah]== [blahblah]&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Create or edit &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.ssh/config&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Host github.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/moyummygit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Add ssh key to your github account through &lt;code class=&quot;highlighter-rouge&quot;&gt;https://github.com/settings/keys&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Try cloning a git through protocol&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone git@github.com:MoYummy/Ruby.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Try &lt;code class=&quot;highlighter-rouge&quot;&gt;ssh -vT git@github.com&lt;/code&gt; for trouble shooting&lt;/p&gt;</content><author><name></name></author><category term="centos" /><category term="git" /><summary type="html">Install git sudo -i yum install git</summary></entry><entry><title type="html">Setup Ruby on Centos</title><link href="/blog-csdn/2016/11/29/Setup-Ruby-on-Centos/" rel="alternate" type="text/html" title="Setup Ruby on Centos" /><published>2016-11-29T13:37:00+08:00</published><updated>2016-11-29T13:37:00+08:00</updated><id>/blog-csdn/2016/11/29/Setup-Ruby-on-Centos</id><content type="html" xml:base="/blog-csdn/2016/11/29/Setup-Ruby-on-Centos/">&lt;p&gt;Install &lt;code class=&quot;highlighter-rouge&quot;&gt;RVM&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo -i
+yum groupinstall -y development # or yum groupinstall -y 'development tools'
+gpg2 --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+curl -L get.rvm.io | bash -s stable
+usermod -aG rvm administrator # usermod -aG rvm [user]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Install &lt;code class=&quot;highlighter-rouge&quot;&gt;Ruby&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rvm install 2.3.1 # rvm install [version]
+rvm use 2.3.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Check by&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;id # uid=502(administrator) gid=502(administrator) groups=502(administrator),5669(rvm)
+ruby -v # ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-linux]
+irb # 2.3.1 :001 &amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;(id number may be different depending on machine)&lt;/p&gt;</content><author><name></name></author><category term="ruby" /><category term="centos" /><summary type="html">Install RVM sudo -i yum groupinstall -y development # or yum groupinstall -y 'development tools' gpg2 --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 curl -L get.rvm.io | bash -s stable usermod -aG rvm administrator # usermod -aG rvm [user]</summary></entry><entry><title type="html">Git reset</title><link href="/blog-csdn/2016/11/23/Git-reset/" rel="alternate" type="text/html" title="Git reset" /><published>2016-11-23T14:02:00+08:00</published><updated>2016-11-23T14:02:00+08:00</updated><id>/blog-csdn/2016/11/23/Git-reset</id><content type="html" xml:base="/blog-csdn/2016/11/23/Git-reset/">&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git reset [commit] # reset local to that commit
+git stash # save changes
+git push -f # force push to remote
+git stash pop # load changes
+git status # commit list has change to that commit with changes after it
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="git" /><category term="github" /><summary type="html">git reset [commit] # reset local to that commit git stash # save changes git push -f # force push to remote git stash pop # load changes git status # commit list has change to that commit with changes after it</summary></entry></feed>

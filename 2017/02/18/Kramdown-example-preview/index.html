@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Kramdown example preview - MoYummy's Blog</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="/blog-csdn/css/csdn.css" rel="stylesheet" type="text/css">
+    <script src="http://cdn.bootcss.com/bootstrap-hover-dropdown/2.0.10/bootstrap-hover-dropdown.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-sidebar/3.3.2/jquery.sidebar.min.js"></script>
+    <script src="https://cdn.bootcss.com/simple-jekyll-search/1.1.5/jekyll-search.min.js"></script>
+  </head>
+  <body>
+
+<a href="https://github.com/iMoYummy/jekyll-theme-csdn"><img style="position: absolute; top: 0; left: 0; border: 0; z-index: 9999" src="https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>
+
+<div id="top" class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#csdn-navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/blog-csdn/">
+        <span class="glyphicon glyphicon-euro" aria-hidden="true"></span> Blog
+      </a>
+    </div>
+
+    <div id="csdn-navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a id="nav-search" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="nav-search">
+            <li class="input-group">
+              <input id="sidebar-post-search" type="text" class="form-control" disabled>
+              <span class="input-group-btn">
+                <button class="btn btn-default" href="/blog-csdn/search"><span class="glyphicon glyphicon-search" onclick="openSearch()"></span></button>
+              </span>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a id="nav-bookmark" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false"><span class="glyphicon glyphicon-star"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="nav-bookmark">
+            <li class="disabled"><a>Favorite</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a id="nav-notification" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false"><span class="glyphicon glyphicon-bell"></span><span class="badge">1</span></a>
+          <ul class="dropdown-menu" aria-labelledby="nav-notification">
+            <li class="disabled"><a>Notification</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a id="nav-action" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false"><span class="glyphicon glyphicon-edit"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="nav-action">
+            <li class="disabled"><a href="#"><span class="glyphicon glyphicon-blackboard"></span> Upload PPT/Document</a></li>
+            <li class="disabled"><a href="#"><span class="glyphicon glyphicon-comment"></span> Ask question</a></li>
+            <li class="disabled"><a href="#"><span class="glyphicon glyphicon-edit"></span> Post</a></li>
+            <li class="disabled"><a href="#"><span class="glyphicon glyphicon-cloud-upload"></span> Upload</a></li>
+            <li class="disabled"><a href="#"><span class="glyphicon glyphicon-file"></span> Create project</a></li>
+            <li class="disabled"><a href="#"><span class="glyphicon glyphicon-console"></span> Create snippets</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a id="nav-user" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false"><span class="glyphicon glyphicon-user"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="nav-user">
+            <li><a href="/blog-csdn/about">About</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a id="nav-menu" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="nav-menu">
+            <li><a href="/blog-csdn/category">Category</a></li>
+            <li><a href="/blog-csdn/tag">Tag</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <div class="container">
+    <a href="/blog-csdn/" class="nounderline"><h1>MoYummy's Blog</h1></a>
+  </div>
+</div>
+
+<div class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#csdn-navbar-second" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div id="csdn-navbar-second" class="collapse navbar-collapse">
+      <form class="navbar-form navbar-right">
+        <a class="btn btn-primary" href="/blog-csdn/archive"><span class="glyphicon glyphicon-th-list"></span> Archive</a>
+        <a class="btn btn-success" href="/blog-csdn/excerpt"><span class="glyphicon glyphicon-tasks"></span> Excerpt</a>
+        <a class="btn btn-info" href="/blog-csdn/feed.xml"><span class="badge">RSS</span> Feed</a>
+        <a class="btn btn-warning" href="#" disabled="disabled"><span class="glyphicon glyphicon-cog"></span> Admin</a>
+        <a class="btn btn-danger" href="#" disabled="disabled"><span class="glyphicon glyphicon-edit"></span> Post</a>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="container col-md-3 visible-lg-block">
+<div class="panel panel-default">
+  <div class="panel-heading">Profile</div>
+  <div class="panel-body list-group">
+    <li class="list-group-item">
+      <a href="/blog-csdn/" class="thumbnail">
+        <img src="/blog-csdn/assets/logo.png" alt="Mo Yummy">
+      </a>
+      <div class="text-center">Mo Yummy</div>
+      <div class="text-center">
+        <a href="https://github.com/iMoYummy/jekyll-theme-csdn" class="label label-success"><span class="glyphicon glyphicon-plus"></span> Follow</a>
+        <a class="label label-success"><span class="glyphicon glyphicon-home"></span> Message</a>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div class="row"><div class="col-md-12">View: N/A</div></div>
+      <div class="row"><div class="col-md-12">Credit: N/A</div></div>
+      <div class="row"><div class="col-md-12">Level: <span class="badge">BLOG</span></div></div>
+      <div class="row"><div class="col-md-12">Rank: Beyond horizon</div></div>
+    </li>
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-md-6">Original:15</div><div class="col-md-6">Share:N/A</div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">Translation:N/A</div><div class="col-md-6">Comment:N/A</div>
+      </div>
+    </li>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Search</div>
+  <div class="panel-body">
+    <div class="input-group">
+      <input id="sidebar-post-search" type="text" class="form-control" disabled>
+      <span class="input-group-btn">
+        <button class="btn btn-default" href="/blog-csdn/search"><span class="glyphicon glyphicon-search" onclick="openSearch()"></span></button>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Category</div>
+  <div class="panel-body list-group">
+
+    <a href="/blog-csdn/category/stuff" class="list-group-item">
+      stuff<span class="badge">7</span>
+    </a>
+
+    <a href="/blog-csdn/category/git" class="list-group-item">
+      git<span class="badge">3</span>
+    </a>
+
+    <a href="/blog-csdn/category/sublime" class="list-group-item">
+      sublime<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/category/ruby" class="list-group-item">
+      ruby<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/category/docker" class="list-group-item">
+      docker<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/category/jekyll" class="list-group-item">
+      jekyll<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/category/thoughts" class="list-group-item">
+      thoughts<span class="badge">1</span>
+    </a>
+
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">Tag</div>
+  <div class="panel-body list-group">
+
+    <a href="/blog-csdn/tag/vim" class="list-group-item">
+      vim<span class="badge">3</span>
+    </a>
+
+    <a href="/blog-csdn/tag/git" class="list-group-item">
+      git<span class="badge">3</span>
+    </a>
+
+    <a href="/blog-csdn/tag/github" class="list-group-item">
+      github<span class="badge">2</span>
+    </a>
+
+    <a href="/blog-csdn/tag/centos" class="list-group-item">
+      centos<span class="badge">4</span>
+    </a>
+
+    <a href="/blog-csdn/tag/sublime" class="list-group-item">
+      sublime<span class="badge">2</span>
+    </a>
+
+    <a href="/blog-csdn/tag/ruby" class="list-group-item">
+      ruby<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/tag/typescript" class="list-group-item">
+      typescript<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/tag/macos" class="list-group-item">
+      macos<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/tag/xcode" class="list-group-item">
+      xcode<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/tag/docker" class="list-group-item">
+      docker<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/tag/jekyll" class="list-group-item">
+      jekyll<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/tag/kramdown" class="list-group-item">
+      kramdown<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/tag/markdown" class="list-group-item">
+      markdown<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/tag/stuff" class="list-group-item">
+      stuff<span class="badge">1</span>
+    </a>
+
+    <a href="/blog-csdn/tag/thoughts" class="list-group-item">
+      thoughts<span class="badge">1</span>
+    </a>
+
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">Archive</div>
+  <div class="panel-body list-group">
+
+  
+  
+    <a href="/blog-csdn/2017/03" class="list-group-item">
+      Mar 2017<span class="badge">1</span>
+    </a>
+    
+  
+  
+  
+  
+  
+  
+  
+    <a href="/blog-csdn/2017/02" class="list-group-item">
+      Feb 2017<span class="badge">1</span>
+    </a>
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    <a href="/blog-csdn/2017/01" class="list-group-item">
+      Jan 2017<span class="badge">1</span>
+    </a>
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    <a href="/blog-csdn/2016/12" class="list-group-item">
+      Dec 2016<span class="badge">1</span>
+    </a>
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    <a href="/blog-csdn/2016/11" class="list-group-item">
+      Nov 2016<span class="badge">1</span>
+    </a>
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    <a href="/blog-csdn/2016/06" class="list-group-item">
+      Jun 2016<span class="badge">1</span>
+    </a>
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    <a href="/blog-csdn/2016/01" class="list-group-item">
+      Jan 2016<span class="badge">1</span>
+    </a>
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    <a href="/blog-csdn/2015/12" class="list-group-item">
+      Dec 2015<span class="badge">1</span>
+    </a>
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    <a href="/blog-csdn/2015/11" class="list-group-item">
+      Nov 2015<span class="badge">1</span>
+    </a>
+    
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">View</div>
+  <div class="panel-body">
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">Comment</div>
+  <div class="panel-body">
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">Recommendation</div>
+  <div class="panel-body">
+  </div>
+</div>
+    </div>
+    <div class="container col-md-9">
+      <div class="panel panel-default">
+  <div class="panel-heading"><h1>Kramdown example preview</h1></div>
+  <div class="panel-body list-group">
+    <li class="list-group-item">
+      <div class="row">
+        <div class="text-right col-md-12">
+          18 Feb 2017
+          <span class="glyphicon glyphicon-search"></span> 100 views
+          <span class="glyphicon glyphicon-comment"></span> Comment(100)
+          <a href="#">Like</a> <a href="#">Report</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <span class="glyphicon glyphicon-list"></span> Category:
+
+          <a class="label label-info" href="/blog-csdn/category/stuff">stuff (7)</a>
+
+        </div>
+        <div class="col-md-6">Tag:
+
+        <a class="label label-info" href="/blog-csdn/tag/kramdown">kramdown (1)</a>
+
+        <a class="label label-info" href="/blog-csdn/tag/markdown">markdown (1)</a>
+
+        </div>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div class="container-fluid">
+      <hr />
+
+<p>This `is not a code` span!</p>
+
+<hr />
+
+<h1 id="first-level-header">First level header</h1>
+
+<h2 id="second-level-header">Second level header</h2>
+
+<h1 id="other-first-level-header">Other first level header</h1>
+
+<hr />
+
+<p>This is a normal
+paragraph.</p>
+
+<h2 id="and-a-header">And A Header</h2>
+<p>And a paragraph</p>
+
+<blockquote>
+  <p>This is a blockquote.</p>
+</blockquote>
+
+<h2 id="and-a-header-1">And A Header</h2>
+
+<hr />
+
+<h2 id="header">header</h2>
+<p>para</p>
+
+<hr />
+
+<h1 id="first-level-header-1">First level header</h1>
+
+<h3 id="third-level-header">Third level header</h3>
+
+<h2 id="second-level-header-1">Second level header</h2>
+
+<hr />
+
+<h2 id="id">Hello</h2>
+
+<h1 id="id">Hello</h1>
+
+<h1 id="id">Hello</h1>
+
+<hr />
+
+<blockquote>
+  <p>This is a blockquote.
+    on multiple lines
+that may be lazy.</p>
+
+  <p>This is the second paragraph.</p>
+</blockquote>
+
+<hr />
+
+<blockquote>
+  <p>This is a paragraph.</p>
+
+  <blockquote>
+    <p>A nested blockquote.</p>
+  </blockquote>
+
+  <h2 id="headers-work">Headers work</h2>
+
+  <ul>
+    <li>lists too</li>
+  </ul>
+
+  <p>and all other block-level elements</p>
+</blockquote>
+
+<hr />
+
+<blockquote>
+  <p>A code block:</p>
+
+  <div class="highlighter-rouge"><pre class="highlight"><code>ruby -e 'puts :works'
+</code></pre>
+  </div>
+</blockquote>
+
+<hr />
+
+<blockquote>
+  <p>This is a paragraph inside
+a blockquote.</p>
+
+  <blockquote>
+    <p>This is a nested paragraph
+that continues here
+and here
+and here</p>
+  </blockquote>
+</blockquote>
+
+<hr />
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Here comes some code
+
+This text belongs to the same code block.
+</code></pre>
+</div>
+
+<hr />
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Here comes some code
+</code></pre>
+</div>
+<div class="highlighter-rouge"><pre class="highlight"><code>This one is separate.
+</code></pre>
+</div>
+
+<hr />
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Here comes some code.
+</code></pre>
+</div>
+
+<hr />
+
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">what?</span>
+  <span class="mi">42</span>
+<span class="k">end</span>
+</code></pre>
+</div>
+
+<hr />
+
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">what?</span>
+  <span class="mi">42</span>
+<span class="k">end</span>
+</code></pre>
+</div>
+
+<hr />
+
+<ul>
+  <li>kram</li>
+  <li>down</li>
+  <li>now</li>
+</ul>
+
+<ol>
+  <li>kram</li>
+  <li>down</li>
+  <li>now</li>
+</ol>
+
+<hr />
+
+<ul>
+  <li>This is the first line. Since the first non-space characters appears in
+column 3, all other indented lines have to be indented 2 spaces.
+However, one could be lazy and not indent a line but this is not
+recommended.</li>
+  <li>This is the another item of the list. It uses a different number
+   of spaces for indentation which is okay but should generally be avoided.</li>
+  <li>The list item marker is indented 3 spaces which is allowed but should
+also be avoided and starts the third list item. Note that the lazy
+line in the second list item may make you believe that this is a
+sub-list which it isn’t! So avoid being lazy!</li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>This is the first list item bla blabla blabla blabla blabla blabla
+blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla
+blabla blabla blabla bla</li>
+  <li>This is the another item of the list. bla blabla blabla blabla blabla
+blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla</li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>list 1 item 1</li>
+  <li>list 1 item 2 (indent 1 space)</li>
+  <li>list 1 item 3 (indent 2 spaces)</li>
+  <li>list 1 item 4  (indent 3 spaces)
+    * lazy text belonging to above item 4</li>
+</ul>
+
+<hr />
+
+<ol>
+  <li>list 1 item 1</li>
+  <li>list 1 item 2 (indent 1 space)</li>
+  <li>list 1 item 3 (indent 2 spaces)</li>
+  <li>list 1 item 4  (indent 3 spaces)
+    5. lazy text belonging to above item 4</li>
+</ol>
+
+<hr />
+
+<ul>
+  <li>list 1 item 1
+    <ul>
+      <li>nested list item 1</li>
+      <li>nested list item 2</li>
+    </ul>
+  </li>
+  <li>list 1 item 2
+    <ul>
+      <li>nested list item 1</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<ol>
+  <li>list 1 item 1
+    <ol>
+      <li>nested list item 1</li>
+      <li>nested list item 2</li>
+    </ol>
+  </li>
+  <li>list 1 item 2
+    <ol>
+      <li>nested list item 1</li>
+    </ol>
+  </li>
+</ol>
+
+<hr />
+
+<ol>
+  <li>
+    <p>text for this list item
+further text (indent 3 spaces)</p>
+  </li>
+  <li>
+    <p>text for this list item
+further text (indent 4 spaces)</p>
+  </li>
+</ol>
+
+<hr />
+
+<ul>
+  <li>Using a tab to indent this line, the tab only counts as three spaces
+and therefore the overall indentation is four spaces.</li>
+</ul>
+
+<ol>
+  <li>The tab after the marker counts here as three spaces. Since the
+indentation of the marker is three spaces and the marker itself
+takes two characters, the overall indentation needed for the
+following lines is eight spaces or two tabs.</li>
+</ol>
+
+<hr />
+
+<ul>
+  <li>
+    <p>kram</p>
+  </li>
+  <li>down</li>
+  <li>now</li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>Not wrapped in a paragraph</li>
+  <li>
+    <p>Wrapped in a paragraph due to the following blank line.</p>
+  </li>
+  <li>
+    <p>Also wrapped in a paragraph due to the
+following blank line and the EOB marker.</p>
+  </li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>
+    <p>First list item</p>
+  </li>
+  <li>
+    <p>Second list item</p>
+  </li>
+  <li>
+    <p>Last list item</p>
+  </li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>
+    <p>First item</p>
+
+    <p>A second paragraph</p>
+
+    <ul>
+      <li>nested list</li>
+    </ul>
+
+    <blockquote>
+      <p>blockquote</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>Second item</p>
+  </li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>
+    <p>This is a list item.</p>
+
+    <p>The second para of the list item.</p>
+  </li>
+</ul>
+<div class="highlighter-rouge"><pre class="highlight"><code>A code block following the list item.
+</code></pre>
+</div>
+
+<hr />
+
+<ul>
+  <li>List one</li>
+</ul>
+<ul>
+  <li>List two</li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>This is just text.
+    <ul>
+      <li>this is a sub list item
+        <ul>
+          <li>this is a sub sub list item</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>This is just text,
+  spanning two lines
+    <ul>
+      <li>this is a nested list item.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<p>1984. It was great
+- others say that, too!</p>
+
+<hr />
+
+<ul>
+  <li class="cls">
+    <p>This item has the class “cls”.
+Here continues the above paragraph.</p>
+  </li>
+  <li>
+    <p>This is a normal list item.</p>
+  </li>
+</ul>
+
+<hr />
+
+<dl>
+  <dt>kramdown</dt>
+  <dd>A Markdown-superset converter</dd>
+  <dt>Maruku</dt>
+  <dd>Another Markdown-superset converter</dd>
+</dl>
+
+<hr />
+
+<dl>
+  <dt>definition term 1</dt>
+  <dt>definition term 2</dt>
+  <dd>This is the first line. Since the first non-space characters appears in
+column 3, all other lines have to be indented 2 spaces (or lazy syntax may
+be used after an indented line). This tells kramdown that the lines
+belong to the definition.</dd>
+  <dd>This is the another definition for the same term. It uses a
+different number of spaces for indentation which is okay but
+should generally be avoided.</dd>
+  <dd>The definition marker is indented 3 spaces which is allowed but
+should also be avoided.</dd>
+</dl>
+
+<hr />
+
+<dl>
+  <dt>definition term</dt>
+  <dd>This definition will just be text because it would normally be a
+paragraph and the there is no preceding blank line.
+
+    <blockquote>
+      <p>although the definition contains other block-level elements</p>
+    </blockquote>
+  </dd>
+  <dd>
+    <p>This definition <em>will</em> be a paragraph since it is preceded by a
+blank line.</p>
+  </dd>
+</dl>
+
+<hr />
+
+<dl>
+  <dt id="term">Term with id=”term”</dt>
+  <dd class="cls">Definition with class “cls”</dd>
+  <dt id="term1">First term</dt>
+  <dt id="term2">Second term</dt>
+  <dd class="cls">Definition</dd>
+</dl>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>First cell</td>
+      <td>Second cell</td>
+      <td>Third cell</td>
+    </tr>
+    <tr>
+      <td>First</td>
+      <td>Second</td>
+      <td>Third</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>First</td>
+      <td>Second</td>
+      <td> </td>
+      <td>Fourth</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p>|—-+—-|
++—-|—-+
+|———|
+|-
+| :—–: |</p>
+<ul>
+  <li>|-</li>
+</ul>
+
+<hr />
+
+<p>|—+—+—|</p>
+<ul>
+  <li>:-: |:——| —:|
+| :-: :- -: -
+:-: | :-</li>
+</ul>
+
+<hr />
+
+<p>|====+====|
++====|====+
+|=========|
+|=</p>
+
+<hr />
+
+<table>
+  <thead>
+    <tr>
+      <th>Default aligned</th>
+      <th style="text-align: left">Left aligned</th>
+      <th style="text-align: center">Center aligned</th>
+      <th style="text-align: right">Right aligned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>First body part</td>
+      <td style="text-align: left">Second cell</td>
+      <td style="text-align: center">Third cell</td>
+      <td style="text-align: right">fourth cell</td>
+    </tr>
+    <tr>
+      <td>Second line</td>
+      <td style="text-align: left">foo</td>
+      <td style="text-align: center"><strong>strong</strong></td>
+      <td style="text-align: right">baz</td>
+    </tr>
+    <tr>
+      <td>Third line</td>
+      <td style="text-align: left">quux</td>
+      <td style="text-align: center">baz</td>
+      <td style="text-align: right">bar</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>Second body</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+    <tr>
+      <td>2 line</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Footer row</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+  </tfoot>
+</table>
+
+<hr />
+
+<table>
+  <thead>
+    <tr>
+      <th>Default aligned</th>
+      <th style="text-align: left">Left aligned</th>
+      <th style="text-align: center">Center aligned</th>
+      <th style="text-align: right">Right aligned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>First body part</td>
+      <td style="text-align: left">Second cell</td>
+      <td style="text-align: center">Third cell</td>
+      <td style="text-align: right">fourth cell</td>
+    </tr>
+    <tr>
+      <td>Second line</td>
+      <td style="text-align: left">foo</td>
+      <td style="text-align: center"><strong>strong</strong></td>
+      <td style="text-align: right">baz</td>
+    </tr>
+    <tr>
+      <td>Third line</td>
+      <td style="text-align: left">quux</td>
+      <td style="text-align: center">baz</td>
+      <td style="text-align: right">bar</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>Second body</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+    <tr>
+      <td>2 line</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Footer row</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+  </tfoot>
+</table>
+
+<hr />
+
+<hr />
+
+<hr />
+
+<hr />
+
+<hr />
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align*}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{align*} %]]></script>
+
+<hr />
+
+<p>The following is a math block:</p>
+
+<script type="math/tex; mode=display">5 + 5</script>
+
+<p>But next comes a paragraph with an inline math statement:</p>
+
+<p><script type="math/tex">5 + 5</script></p>
+
+<hr />
+
+<p>$$ 5 + 5 $$</p>
+
+<hr />
+
+<p>This is a para.</p>
+<div>
+Something in here.
+</div>
+<p>Other para.</p>
+
+<hr />
+
+<p>This is a para.</p>
+<div>
+Something in here.
+</div>
+<p>Other para.</p>
+
+<hr />
+
+<div id="content"><div id="layers"><div id="layer1">
+This is some text in the `layer1` div.
+</div>
+This is some text in the `layers` div.
+</div></div>
+<p>This is a para outside the <abbr class="mega-big" title="HyperTextMarkupLanguage">HTML</abbr> block.</p>
+
+<hr />
+
+<div>
+  <p>This is the first part of a para,
+which is continued here.</p>
+</div>
+
+<p>This works without problems because it is parsed as
+span-level elements</p>
+
+<div>
+  <p>The end tag is not found because
+this line is parsed as a paragraph&lt;/div&gt;</p>
+
+  <hr />
+
+  <p>This is a para.</p>
+  <div>
+    <p>Another para.
+&lt;/p&gt;</p>
+
+    <hr />
+
+    <p>This is a para.</p>
+    <div>
+  <p>Another para.</p>
+</div>
+
+    <hr />
+
+    <p>This is a para.
+<!-- a *comment* -->
+<? a processing `instruction`
+   spanning multiple lines
+?> First part of para,
+continues here.</p>
+
+    <hr />
+
+    <p>Information can be found on the <a href="http://example.com">http://example.com</a> homepage.
+You can also mail me: <a href="mailto:me.example@example.com">me.example@example.com</a></p>
+
+    <hr />
+
+    <p>This is <a href="http://rubyforge.org">a link</a> to a page.
+A <a href="../test" title="local URI">link</a> can also have a title.
+And <a href="link with spaces.html">spaces</a>!</p>
+
+    <hr />
+
+    <p>This is a <a href="http://example.com" hreflang="de">link</a></p>
+
+    <hr />
+
+    <p>This is a <a hreflang="de" href="http://example.com">reference style link</a> to a page. And <a hreflang="de" href="http://example.com">this</a> is also a link. As is [this][] and [THIS].</p>
+
+    <hr />
+
+    <hr />
+
+    <p>The next paragraph contains a link and some text.</p>
+
+    <p><a href="link_to_room_100.html">Room 100</a>: There you should find everything you need!</p>
+
+    <hr />
+
+    <hr />
+
+    <p>Here comes a <img src="../images/smiley.png" alt="smiley" />! And here
+<img src="../images/other.png" alt="too" title="Title text" />. Or ![here].
+With empty alt text <img src="see.jpg" alt="" /></p>
+
+    <hr />
+
+    <p>Here is an inline <img src="smiley.png" alt="smiley" height="36px" width="36px" />.</p>
+
+    <p>And here is a referenced <img height="36px" width="36px" src="smile.png" alt="smile" /></p>
+
+    <hr />
+
+    <p><em>some text</em>
+<em>some text</em>
+<strong>some text</strong>
+<strong>some text</strong></p>
+
+    <hr />
+
+    <p>This is un<em>believe</em>able! This d_oe_s not work!</p>
+
+    <hr />
+
+    <p>This is a <strong><em>text with light and strong emphasis</em></strong>.
+This <strong>is <em>emphasized</em> as well</strong>.
+This <em>does _not_ work</em>.
+This <strong>does __not__ work either</strong>.</p>
+
+    <hr />
+
+    <p>This is a * literal asterisk.
+These are ** two literal asterisk.
+As *are* these!</p>
+
+    <hr />
+
+    <p>Use <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code> tags for this.</p>
+
+    <hr />
+
+    <p>Here is a literal <code class="highlighter-rouge">`</code> backtick.
+And here is <code class="highlighter-rouge"> `some` </code> text (note the two spaces so that one is left
+in the output!).</p>
+
+    <hr />
+
+    <p>This is a ` literal backtick.
+As `are` these!</p>
+
+    <hr />
+
+    <p>This is a Ruby code fragment <code class="language-ruby highlighter-rouge"><span class="n">x</span> <span class="o">=</span> <span class="no">Class</span><span class="p">.</span><span class="nf">new</span></code></p>
+
+    <hr />
+
+    <p>This is .</p>
+
+    <p>This <span>is automatically closed.</span></p>
+
+    <hr />
+
+    <p>Link: <a href="some link">text</a></p>
+
+    <hr />
+
+    <p>Link: <a href="some link">text</a></p>
+
+    <hr />
+
+    <p>This is some text.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. Other text.<sup id="fnref:footnote"><a href="#fn:footnote" class="footnote">2</a></sup>.</p>
+
+    <hr />
+
+    <hr />
+
+    <p>This is some text not written in <abbr class="mega-big" title="HyperTextMarkupLanguage">HTML</abbr> but in <abbr title="It's called Markdown">another language</abbr>!</p>
+
+    <hr />
+
+    <ul>
+      <li>
+        <p>list item one</p>
+      </li>
+      <li>
+        <p>list item two</p>
+      </li>
+    </ul>
+
+    <hr />
+
+    <ul>
+      <li>list one</li>
+    </ul>
+    <ul>
+      <li>list two</li>
+    </ul>
+
+    <hr />
+
+    <hr />
+
+    <hr />
+
+    <p id="para-one">A simple paragraph with an ID attribute.</p>
+
+    <blockquote title="The blockquote title" id="myid">
+      <p>A blockquote with a title</p>
+    </blockquote>
+
+    <div class="ruby highlighter-rouge"><pre class="highlight"><code>Some code here
+</code></pre>
+    </div>
+
+    <hr />
+
+    <p>This <em class="underline">is</em> some <code id="id" class="class highlighter-rouge">code</code>.
+A <a href="test.html" rel="something">link</a> and some <strong class="tools">tools</strong>.</p>
+
+    <hr />
+
+    <p>This <em>is italic</em><em class="special">marked</em> text</p>
+
+    <hr />
+
+    <!-- This text is completely ignored by kramdown - a comment in the text. -->
+
+    <p>Do you see <!-- this text -->?
+<!-- some other comment --></p>
+
+    <hr />
+  </div>
+</div>
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Some <em>crazy</em> footnote definition.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:footnote">
+
+      <blockquote>
+        <p>Blockquotes can be in a footnote.</p>
+      </blockquote>
+
+      <div class="highlighter-rouge"><pre class="highlight"><code>as well as code blocks
+</code></pre>
+      </div>
+
+      <p>or, naturally, simple paragraphs.&nbsp;<a href="#fnref:footnote" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </div>
+    </li>
+    <ul class="list-group-item list-unstyled">
+
+      <li><a href="/blog-csdn/2017/02/15/Birth-of-jekyll-theme-csdn/" class="nounderline">
+        <span class="badge"><span class="glyphicon glyphicon-menu-up"></span> Prev </span> Birth of jekyll-theme-csdn
+      </a></li>
+
+
+
+      <li><a href="/blog-csdn/2017/03/24/Thoughts-about-working-style/" class="nounderline">
+        <span class="badge"><span class="glyphicon glyphicon-menu-down"></span> Next </span> Thoughts about working style
+      </a></li>
+
+    </ul>
+  </div>
+</div>
+
+      <div class="text-right"><a href="#top"><span class="badge"><span class="glyphicon glyphicon-chevron-up"></span> Return to top</span></a></div>
+    </div>
+  </div>
+</div>
+
+
+<script src="/blog-csdn/js/csdn.js"></script>
+<script type="text/javascript">
+function openSearch() {
+  top.location.href = "/blog-csdn/search?q=" + document.getElementById("sidebar-post-search").value
+}
+</script>
+    <div class="container text-center">
+        <a href="mailto:mo_yummy@sina.cn"><span class="glyphicon glyphicon-envelope"></span></a>
+        <span class="glyphicon glyphicon-copyright-mark"></span> 2017 Mo Yummy
+        <div>Powered by Jekyll and Bootstrap</div>
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+    </div>
+  </body>
+</html>
